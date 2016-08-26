@@ -27,7 +27,7 @@ ncaa_page = home.find("nav",{"id":"global-nav"}).find("a",
         {"itemprop":"url","href":re.compile("^\/(c|C)ollege.*(F|f)ootball\/")}).attrs['href']        
 ncaaf = get_website(url+ncaa_page)
 
-print 'got ncaa page'
+print 'got ncaa'
 
 #get schedule page
 sched_page = ncaaf.find("nav",{"id":"global-nav-secondary"}).div.find("a",{"href":re.compile("teams")}).attrs['href']      
